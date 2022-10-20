@@ -48,18 +48,18 @@
 }
 
 .headerSearch {
-    height: 30px;
+    /* min-height: 30px; */
     background-color: white;
     border: 3px solid #febb02;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 0px;
     border-radius: 5px;
     position: absolute;
     bottom: -25px;
     width: 100%;
     max-width: 1024px;
+    flex-wrap: wrap;
 }
 
 .headerIcon {
@@ -67,9 +67,17 @@
 }
 
 .headerSearchItem {
+    max-width: fit-content;
     display: flex;
     align-items: center;
-    gap: 10px;   
+    padding: 10px;
+}
+
+.headerSearchItemInner {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .headerSearchInput {
@@ -125,5 +133,11 @@
 
 .optionCounterButton:disabled {
     cursor: not-allowed;
+}
+
+@media (max-width:760px){
+    .headerSearch {
+        justify-content: space-between;
+    }
 }
 
