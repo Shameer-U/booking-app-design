@@ -25,6 +25,7 @@
 
 .headerList {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 50px;
 }
@@ -142,9 +143,33 @@
     cursor: not-allowed;
 }
 
-@media (max-width:760px){
+@media (max-width:832px){
+    .headerContainer {
+        margin-bottom: 155px;
+    }
+}
+
+@media (max-width:768px){
+    .headerContainer {
+        margin-bottom: 268px;
+    }
+
+    .headerSearchContainer {
+        display: flex;
+        justify-content: center;
+    }
+
     .headerSearch {
-        justify-content: space-between;
+        width: 250px;
+    }
+
+    .date{
+        top:100px;
+        right:-41px;
+    }
+
+    .options {
+        top:160px;
     }
 }
 
