@@ -1,8 +1,15 @@
 import "./searchItem.css";
+import { useNavigate } from "react-router-dom";
 
 const SearchItem = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/hotels/1");
+    }
+
   return (
-    <div className="searchItem">
+    <div className="searchItem" onClick={handleClick}>
         <div className="siImgContainer">
             <img
                 src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
