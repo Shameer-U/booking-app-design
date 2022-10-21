@@ -2,12 +2,13 @@
     width: 100%;
     max-width: 1024px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .pListItem {
-    flex: 1;
+    flex-basis: 240px;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;

@@ -10,21 +10,27 @@
   padding: 50px;
 }
 
+.mailInputContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .mailInputContainer > input {
   width: 300px;
-  height: 30px;
+  height: 35px;
   padding: 10px;
   border: none;
-  margin-right: 10px;
   border-radius: 5px;
 }
 
 .mailInputContainer > button {
-  height: 50px;
   background-color: #0071c2;
   color: white;
   font-weight: 500;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  padding: 10px;
 }
