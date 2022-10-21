@@ -68,18 +68,22 @@ const Hotel = () => {
           <FontAwesomeIcon icon={faCircleArrowRight} className="arrow" onClick={()=> handleMove("l")}/>
         </div>}
         <div className="hotelWrapper">
-          <button className="bookNow">Reserve or Book Now!</button>
-          <h1 className="hotelTitle">Grand Hotel</h1>
-          <div className="hotelAddress">
-            <FontAwesomeIcon icon={faLocationDot} />
-            <span>Elton St 125 New york</span>
+          <div className='hotelBasicDetails'>
+              <div className='hotelBasicText'>
+                <h1 className="hotelTitle">Grand Hotel</h1>
+                <div className="hotelAddress">
+                  <FontAwesomeIcon icon={faLocationDot} />
+                  <span>Elton St 125 New york</span>
+                </div>
+                <span className="hotelDistance">
+                  Excellent location – 500m from center
+                </span>
+                <span className="hotelPriceHighlight">
+                  Book a stay over $114 at this property and get a free airport taxi
+                </span>
+              </div>
+              <button className="bookNow">Reserve or Book Now!</button>
           </div>
-          <span className="hotelDistance">
-            Excellent location – 500m from center
-          </span>
-          <span className="hotelPriceHighlight">
-            Book a stay over $114 at this property and get a free airport taxi
-          </span>
           <div className="hotelImages">
             {photos.map((photo, i) => (
               <div className="hotelImgWrapper" key={i}>
@@ -123,6 +127,7 @@ const Hotel = () => {
           </div>
         </div>
         <MailList />
+        <div className="footerCustomize"></div>
         <Footer />
       </div>
     </div>
