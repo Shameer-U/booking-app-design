@@ -126,10 +126,9 @@ const Hotel = () => {
             </div>
           </div>
         </div>
-        <MailList />
-        <div className="footerCustomize"></div>
-        <Footer />
       </div>
+      <MailList />
+      <Footer />
     </div>
   )
 }

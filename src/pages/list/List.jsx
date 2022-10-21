@@ -103,7 +103,6 @@ const List = () => {
         </div>
       </div>
       <MailList />
-      <div className="footerCustomize"></div>
       <Footer />
     </div>
   );
