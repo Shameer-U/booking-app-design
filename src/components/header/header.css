@@ -46,6 +46,10 @@
     font-weight: 500;
     border: none;
     padding: 10px;
+    cursor: initial;
+}
+
+.headerBtn.cursor{ 
     cursor: pointer;
 }
 

@@ -143,7 +143,7 @@ const Header = ({type}) => {
                         </div>
                     </div>
                     <div className="headerSearchItem">
-                        <button className="headerBtn" onClick={handleSearch}>Search</button>
+                        <button className="headerBtn cursor" onClick={handleSearch}>Search</button>
                     </div>
                 </div> 
             </div>
